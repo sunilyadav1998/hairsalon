@@ -1,0 +1,285 @@
+ *{
+ 	margin: 0px;
+ 	padding: 0px;
+ 	box-sizing: border-box;
+  
+ }
+ body{
+ 	font-family: 'Baloo Chettan 2', cursive;
+ 	line-height: 1.5;
+ }
+ /*--navbar---*/
+ .nab{
+    background: grey;
+    height: 80px;
+    width: 100%;
+    z-index: 999;
+    position: fixed;
+ }
+ .loogo{
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0px 100px;
+  font-weight: bold;
+ }
+ .nab ul{
+  float: right;
+  margin-right: 20px;
+ }
+ .nab ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+ }
+ .nab ul li a{
+  color: white;
+  text-decoration: none;
+  list-style: none;
+  font-size: 17px;
+  text-transform: uppercase;
+  padding: 7px 13px;
+  border-radius: 3px;
+ }
+ a.active,a:hover{
+  background: orange;
+  transition: .5s;
+ }
+ .nab .checkbtn{
+  margin-left:10px;
+ }
+ /*----header----*/
+ .header{
+ 	min-height: 100vh;
+ 	background: center/cover no-repeat fixed
+ 	url('img/food2.jpg'),linear-gradient(red,yellow);
+ 	margin-top: auto;
+ }
+ .hero{
+ 	display: flex;
+ 	flex-direction: column;
+ 	justify-content: center;
+ 	align-items: center;
+ 	position: absolute;
+ 	background-attachment: fixed;
+ 	width: 100%;
+ 	height: 100%;
+ }
+ .hero .foody {
+ 	color: white;
+ 	font-size: 50px;
+ }
+ .book-button{
+ 	display:block;
+ 	text-decoration: none;
+ 	text-transform: uppercase;
+ 	padding: 13px 20px;
+ 	border-radius: 200px;
+ 	font-weight: bold;
+ 	cursor: pointer;
+ 	background: orange;
+ 	color: white;
+ 	border: 2px solid orange;
+  }
+  .book-button:hover{
+  	background: white;
+  	color: orange;
+  	border: none;
+  }
+  .book-button{
+  	animation:pulsate 3s ease-in-out;
+  	 
+  	animation-iteration-count: infinite;
+  	opacity: .3;
+  	color:black;
+
+  }
+  @keyframes pulsate{
+  	0%{
+  		opacity: .3;
+  	}
+  	50%{
+  		opacity: 1;
+  	}
+  	100%{
+  		opacity: .3;
+  	}
+  }
+  
+  #aboutts .main{
+    text-align: center;
+    font-size: 45px; 
+    margin-top: 12px;
+  }	
+   
+ .about-icon .fas{
+  	width:50px;
+  	height:50px;
+  	background: black;
+  	margin: 20px;
+  	transition-property: background-color;
+  	transition-duration: 5s;
+
+  }
+
+
+  .about-center{
+  	display: flex;
+  	padding: 20px;
+  	text-align: center;
+  }
+  .about-info{
+  	margin-top:2px;
+  	background: black;
+  	border-radius: 20px;
+  	line-height: 1.5;
+  	color: orange;
+    padding:1px;
+    font-weight: bold;
+  }
+  .about-text{
+  	padding: 20px;
+
+  }
+  .subtitle{
+  	font-weight: bold;
+  }
+  .menu-image{
+    height: 100vh;
+  }
+     
+ 
+  
+  .about-icon:hover .fas{
+  	background-color: green; 
+  	transform:translateY(10px);
+  	cursor: pointer;
+  }
+  .subtitle:hover{
+  	color: pink;
+  }
+  
+  .image-for{
+    height: 70vh;
+    width: 100%;
+    margin: 0px auto;
+    position: relative;  
+     }
+    
+  .xyz{
+    
+    height: 50vh;
+    width: 100%;
+    background: linear-gradient( 120deg,rgba(255,255,255,0.9) 50%, transparent 50%) ,
+    url(img/food4.jpg);
+    position: relative;
+  }
+ .xyz .para{
+  position: absolute;
+  left: 40px;
+  top:40px;
+  color: rgb(226,188,22);
+ }
+ .para h2{
+  text-align: center;
+  font-size: 20px;
+  color: rgb(226,188,22);
+ }
+ .para h1{
+  font-size: 45px;
+ }
+ .para p{
+  text-align: center;
+ }
+
+ #social-icons{
+    height: 100px;
+    padding: 20px;  
+   text-align: center;
+   }
+
+ #social-icons .ff{
+ 	height: 50px;
+ 	width: 50px;
+  display: inline-block;
+  padding: 5px 10px;
+  margin:10px ;
+  font-size: 40px;
+  border-radius: 5px;
+  border: 2px solid black;
+  background: black;
+}
+.contact{
+  text-align: center;
+  background: url(img/logo4.jpg);
+  font-family: Century Gothic;
+  background-size: cover;
+  
+}
+.contact h1{
+ font-size: 44px;
+ color:white;
+}
+form{
+  margin-top:20px;
+  
+
+}
+.form2{
+  width: 400px;
+  font-size: 20px;
+  
+  outline: none;
+  text-align: center;
+  
+  border-bottom: 1px solid red;
+  margin-bottom: 16px;
+  height: 50px;
+  
+
+}
+form .form22{
+   background: white;
+   margin-bottom: 20px;
+   font-size: 20px;
+   border-radius: 20px solid black;
+   padding: 8px;
+   transition: 0.4s ease;
+
+ }
+ form .form22:hover{
+  background: orange;
+  cursor: pointer;
+  border-radius: 20px;
+ }
+
+footer {
+  background: grey;
+  color:black;
+  margin-top: 5px;
+  }
+
+footer .copyr{
+  text-align: center;
+  padding: 15px 20px;
+}  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
