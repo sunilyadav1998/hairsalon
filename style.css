@@ -119,7 +119,6 @@ nav ul li a{
 	width: 50px;
 	height: 35px;
 	background: linear-gradient(#019587,#fff);
-	
 	position: absolute;
 	top: -20px;
 	left:0;
@@ -183,8 +182,6 @@ nav ul li a{
 	object-fit: cover;
 	opacity: 1;
 	cursor: pointer;
-	
-
 }
 .img:hover.img{
 	opacity: 0.8;
@@ -198,7 +195,6 @@ nav ul li a{
 	opacity: 0;
 	text-align: center;
 	transition: 1s;
-
 }
 .overlay h1{
     color:white;
@@ -217,18 +213,13 @@ nav ul li a{
     width: 60%;
     color: white;
     margin: 10px auto;
-
 }
 .img:hover .overlay{
-	
 	opacity: 1;
 }
 #testimonial{
 	width: 100%;
 	padding-top:20px;
-
-	
-
 }
 .testimonial-row{
 	width: 80%;
@@ -246,6 +237,7 @@ nav ul li a{
 	box-shadow: 0px 10px 10px 3px #009688;
 	cursor: pointer;
 	transition: .5s;
+	min-height: 250px;
 }
 .user{
 	display: flex;
@@ -325,34 +317,69 @@ nav ul li a{
 	font-size: 15px;
 	margin-top:20px;
 	font-weight: bold;
-
+}
+#testimonial{
+	margin-top: 20px; 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-		);
+@media(max-width: 767px){
+	.menu-btn{
+		right: 6px;
+	}
+	.bann-text {
+	    padding: 65% 10px;
+	}
+	.bann-text h1 {
+	    font-size: 36px;
+	}
+	.bann-text p {
+	    font-size: 16px;
+	    line-height: 20px;
+	}
+	.title-text {
+	    padding-bottom: 25px;
+	}
+	.title-text h1 {
+	    font-size: 26px;
+	}
+	.feature-box {
+	    width: 90%;
+	    display: grid;
+	}
+	.features{order: 2;}
+	.features-img img {
+	    width: 100%;
+	    margin: auto;
+	}
+	.features h1 {
+	    font-size: 22px;
+	    line-height: 30px;
+	}
+	.features p {
+	    font-size: 16px;
+	}
+	.features .fa {font-size: 15px;}
+	.service-box .img {
+	    width: 95%;
+	    margin: 10px auto;
+	}
+	.testimonial-col {
+	    flex-basis: 100%;
+	    min-height: auto;
+	}
+	.footer-row {
+	    width: 95%;
+	}
+	.footer-left, .footer-right {
+	    flex-basis: 50%;
+	    padding: 8px 4px;
+	}
+	.footer-row h1 {
+	    font-size: 15px;
+	}
+	.footer-row p {
+	    font-size: 14px;
+	    line-height: 14px;
+	}
 }
+
